@@ -1,8 +1,8 @@
 ---
 title: Crimes
-img: /img/artwork/crimes.jpg
-year: 2008
+image: /img/crimes.jpg
 medium: oil
+year: 2008
 ---
 
 - size: 28 ½ x 21 ½ inches, Framed
