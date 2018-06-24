@@ -1,8 +1,8 @@
 ---
 title: Arbor light
-img: /img/artwork/arbor-light.jpg
-year: 2015
+image: /img/arbor-light.jpg
 medium: digital
+year: 2015
 ---
 
 - size: n/a
