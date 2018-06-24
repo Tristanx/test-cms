@@ -2,16 +2,20 @@
 
 {{ .Content }}
 
-<div class="mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range (.Paginator 4).Pages.ByPublishDate }}
-          <div class="w-50-ns ph1-ns flex">
-            {{ .Render "li"}}
-          </div>
-      {{ end }}
-  </ul>
+<ul class="flex-ns flex-wrap mhn1-ns">
+  {{ range (.Paginator 4).Pages.ByPublishDate }}
+      <li class="w-50-ns ph1-ns flex db">
+        <a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db w-100">
+            <h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
+            <p class="mid-gray lh-title mb2">{{ .Params.year }}</p>
+            <p class="mid-gray lh-title mb2">{{ .Params.format }}</p>
+            <p class="link b dib black mb0">Read more →</p>
+        </a>
+      </li>
+  {{ end }}
+</ul>
+
 {{ if gt .Paginator.TotalPages 1 }}
- 
 <nav class="cf pa3">
     {{ if .Paginator.HasNext }}
     <a class="fl dib link dim black f6 f5-ns b pa2" title="Next Page" href="{{ .Paginator.Next.URL }}">
@@ -26,8 +30,7 @@
         {{ end }}
     </div>
 </nav>
- 
 {{ end }}
-</div>
+
 
 {{end}}

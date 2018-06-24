@@ -1,7 +1,7 @@
 import React from "react";
 import CMS from "netlify-cms";
 
-import HomePreview from "./cms-preview-templates/home";
+/*import HomePreview from "./cms-preview-templates/home";
 import PostPreview from "./cms-preview-templates/post";
 import ProductsPreview from "./cms-preview-templates/products";
 import ValuesPreview from "./cms-preview-templates/values";
@@ -26,4 +26,4 @@ CMS.registerPreviewTemplate("post", PostPreview);
 CMS.registerPreviewTemplate("products", ProductsPreview);
 CMS.registerPreviewTemplate("values", ValuesPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
-CMS.registerWidget("color", ColorControl);
+CMS.registerWidget("color", ColorControl);*/

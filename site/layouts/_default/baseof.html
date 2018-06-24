@@ -1,9 +1,28 @@
 <!doctype html>
 <html lang="en">
-  {{ partial "head" . }}
+  <head>
+    <title>{{ .Title }} | CS</title>
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
   <body class="sans-serif">
+
     {{ partial "nav" . }}
-    {{ block "main" . }}{{ end }} 
-    {{ partial "footer" . }} 
+
+    <div class="bg-off-white pv4">
+      <div class="ph3 mw7 center">
+
+        {{ block "main" . }}{{ end }}
+
+      </div>
+    </div>
+
   </body>
 </html>

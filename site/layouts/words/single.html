@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+ <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
+<p class="mid-gray lh-title mb2">{{ .Params.year }}</p>
+<p class="mid-gray lh-title mb2">
+    <a href={{ .Params.link }}>{{ .Params.format }}</a>
+    {{ if isset .Params "publication" }}
+    published in {{ .Params.publication }}
+    {{end}}
+</p>
+
+<hr/>
+<br/>
+{{ .Content }}
+
+{{ end }}
