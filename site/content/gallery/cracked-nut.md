@@ -1,8 +1,8 @@
 ---
 title: The Cracked Nut
-img: /img/artwork/cracked-nut.jpg
-year: 2010
+image: /img/cracked-nut.jpg
 medium: oil
+year: 2010
 ---
 
 - size: 25 x 31 inches, Framed
